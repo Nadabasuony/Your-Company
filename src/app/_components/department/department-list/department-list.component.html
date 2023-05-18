@@ -1,0 +1,26 @@
+<br>
+<a [routerLink]="['/departments','add']" id="adding">Add New Department</a>
+
+<table class="table table-bordered table-inverse table-responsive">
+    <thead class="thead-inverse">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of departments">
+            <td scope="row">{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.loc}}</td>
+            <td>
+                <button id="detailBtn"><a [routerLink]="['/departments','details',item.id]">Details</a></button> |
+                <button id="detailBtn"><a [routerLink]="['/departments','edit',item.id]">Edit</a></button> |
+                <button id="detailBtn"><a [routerLink]="['/departments','delete',item.id]">Delete</a> </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<router-outlet></router-outlet>

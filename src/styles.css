@@ -1,0 +1,63 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+
+.act {
+    color: lightcoral;
+    font-size: medium;
+    font-weight: bold;
+    padding: .5em;
+}
+
+body {
+    margin: 1em 1em 0 1em;
+}
+
+a{
+    text-decoration: none;
+} 
+
+
+footer {
+    position: relative;
+    bottom: -9em;
+}
+
+#btn {
+    background-color: lightcoral;
+    border: 0;
+}
+
+#btn:hover {
+    background-color: rgb(209, 104, 104);
+}
+
+#title {
+    color: lightcoral; 
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+hr{
+    border: 1px solid rgb(209, 104, 104);
+}
+
+#adding {
+    color: lightcoral;
+    font-weight: bold;
+}
+
+#detailBtn {
+    background-color: lightcoral;
+    border: 1px solid lightcoral;
+    border-radius: 25px;
+    padding: 5px 15px;
+}
+
+#detailBtn:hover {
+    background-color: rgb(209, 104, 104);
+}
+
+#success{
+    background-color: rgba(240, 128, 128, 0.678);
+    color: black;
+    border: none;
+}
